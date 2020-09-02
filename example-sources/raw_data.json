@@ -1,0 +1,389 @@
+{
+    "Coronavirus Shielded Patient List Summary Totals, CCG, England": [
+        {
+            "composite_key": "Coronavirus Shielded Patient List Summary Totals, CCG, England||Thing2||https://files.digital.nhs.uk/BA/B409A2/Coronavirus%20Shielded%20Patient%20List%2C%20England%20-%20Open%20Data%20-%20CCG%20-%202020-07-01.csv",
+            "sourced_from": "https://files.digital.nhs.uk/BA/B409A2/Coronavirus%20Shielded%20Patient%20List%2C%20England%20-%20Open%20Data%20-%20CCG%20-%202020-07-01.csv",
+            "id": "https://files.digital.nhs.uk/BA/B409A2/Coronavirus%20Shielded%20Patient%20List%2C%20England%20-%20Open%20Data%20-%20CCG%20-%202020-07-01.csv : Thing2",
+            "tab": "Thing2",
+            "column_actions": [
+                {
+                    "column_id": "Period",
+                    "column_label": "Period",
+                    "actions": []
+                },
+                {
+                    "column_id": "Area",
+                    "column_label": "Area",
+                    "actions": []
+                },
+                {
+                    "column_id": "Age",
+                    "column_label": "Age",
+                    "actions": []
+                },
+                {
+                    "column_id": "Gender",
+                    "column_label": "Gender",
+                    "actions": []
+                }
+            ],
+            "observations": "Select some observations."
+        },
+        {
+            "composite_key": "Coronavirus Shielded Patient List Summary Totals, CCG, England||sub slice for breakdown field 'ALL'||https://files.digital.nhs.uk/BA/B409A2/Coronavirus%20Shielded%20Patient%20List%2C%20England%20-%20Open%20Data%20-%20CCG%20-%202020-07-01.csv",
+            "sourced_from": "https://files.digital.nhs.uk/BA/B409A2/Coronavirus%20Shielded%20Patient%20List%2C%20England%20-%20Open%20Data%20-%20CCG%20-%202020-07-01.csv",
+            "id": "https://files.digital.nhs.uk/BA/B409A2/Coronavirus%20Shielded%20Patient%20List%2C%20England%20-%20Open%20Data%20-%20CCG%20-%202020-07-01.csv : sub slice for breakdown field 'ALL'",
+            "tab": "sub slice for breakdown field 'ALL'",
+            "column_actions": [
+                {
+                    "column_id": "Period",
+                    "column_label": "Period",
+                    "actions": [
+                        {
+                            "2020-09-02 20:47:15.264461": "Added to dataframe 'Coronavirus Shielded Patient List Summary Totals, CCG, England'"
+                        }
+                    ]
+                },
+                {
+                    "column_id": "Area",
+                    "column_label": "Area",
+                    "actions": [
+                        {
+                            "2020-09-02 20:47:15.264496": "Added to dataframe 'Coronavirus Shielded Patient List Summary Totals, CCG, England'"
+                        }
+                    ]
+                },
+                {
+                    "column_id": "Age",
+                    "column_label": "Age",
+                    "actions": [
+                        {
+                            "2020-09-02 20:47:15.158892": "Pivot the Breakdown Field and Values columns to make Age and Gender dimensions"
+                        },
+                        {
+                            "2020-09-02 20:47:15.171368": "Set value to all."
+                        },
+                        {
+                            "2020-09-02 20:47:15.264517": "Added to dataframe 'Coronavirus Shielded Patient List Summary Totals, CCG, England'"
+                        }
+                    ]
+                },
+                {
+                    "column_id": "Gender",
+                    "column_label": "Gender",
+                    "actions": [
+                        {
+                            "2020-09-02 20:47:15.158972": "Pivot the Breakdown Field and Values columns to make Age and Gender dimensions"
+                        },
+                        {
+                            "2020-09-02 20:47:15.184948": "Set value to all."
+                        },
+                        {
+                            "2020-09-02 20:47:15.264538": "Added to dataframe 'Coronavirus Shielded Patient List Summary Totals, CCG, England'"
+                        }
+                    ]
+                },
+                {
+                    "column_id": "Measure_Type",
+                    "column_label": "Measure Type",
+                    "actions": [
+                        {
+                            "2020-09-02 20:47:15.264559": "Added to dataframe 'Coronavirus Shielded Patient List Summary Totals, CCG, England'"
+                        }
+                    ]
+                },
+                {
+                    "column_id": "Unit_of_measure",
+                    "column_label": "Unit of measure",
+                    "actions": [
+                        {
+                            "2020-09-02 20:47:15.264580": "Added to dataframe 'Coronavirus Shielded Patient List Summary Totals, CCG, England'"
+                        }
+                    ]
+                },
+                {
+                    "column_id": "Unit_multiplier",
+                    "column_label": "Unit multiplier",
+                    "actions": [
+                        {
+                            "2020-09-02 20:47:15.264601": "Added to dataframe 'Coronavirus Shielded Patient List Summary Totals, CCG, England'"
+                        }
+                    ]
+                },
+                {
+                    "column_id": "Value",
+                    "column_label": "Value",
+                    "actions": [
+                        {
+                            "2020-09-02 20:47:15.264622": "Added to dataframe 'Coronavirus Shielded Patient List Summary Totals, CCG, England'"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "composite_key": "Coronavirus Shielded Patient List Summary Totals, CCG, England||sub slice for breakdown field 'Age'||https://files.digital.nhs.uk/BA/B409A2/Coronavirus%20Shielded%20Patient%20List%2C%20England%20-%20Open%20Data%20-%20CCG%20-%202020-07-01.csv",
+            "sourced_from": "https://files.digital.nhs.uk/BA/B409A2/Coronavirus%20Shielded%20Patient%20List%2C%20England%20-%20Open%20Data%20-%20CCG%20-%202020-07-01.csv",
+            "id": "https://files.digital.nhs.uk/BA/B409A2/Coronavirus%20Shielded%20Patient%20List%2C%20England%20-%20Open%20Data%20-%20CCG%20-%202020-07-01.csv : sub slice for breakdown field 'Age'",
+            "tab": "sub slice for breakdown field 'Age'",
+            "column_actions": [
+                {
+                    "column_id": "Period",
+                    "column_label": "Period",
+                    "actions": [
+                        {
+                            "2020-09-02 20:47:15.264644": "Added to dataframe 'Coronavirus Shielded Patient List Summary Totals, CCG, England'"
+                        }
+                    ]
+                },
+                {
+                    "column_id": "Area",
+                    "column_label": "Area",
+                    "actions": [
+                        {
+                            "2020-09-02 20:47:15.264665": "Added to dataframe 'Coronavirus Shielded Patient List Summary Totals, CCG, England'"
+                        }
+                    ]
+                },
+                {
+                    "column_id": "Age",
+                    "column_label": "Age",
+                    "actions": [
+                        {
+                            "2020-09-02 20:47:15.208141": "Pivot the Breakdown Field and Values columns to make Age and Gender dimensions"
+                        },
+                        {
+                            "2020-09-02 20:47:15.245162": "Set 'Age' to the breakdown value."
+                        },
+                        {
+                            "2020-09-02 20:47:15.264685": "Added to dataframe 'Coronavirus Shielded Patient List Summary Totals, CCG, England'"
+                        }
+                    ]
+                },
+                {
+                    "column_id": "Gender",
+                    "column_label": "Gender",
+                    "actions": [
+                        {
+                            "2020-09-02 20:47:15.208296": "Pivot the Breakdown Field and Values columns to make Age and Gender dimensions"
+                        },
+                        {
+                            "2020-09-02 20:47:15.245247": "Set value to all."
+                        },
+                        {
+                            "2020-09-02 20:47:15.264764": "Added to dataframe 'Coronavirus Shielded Patient List Summary Totals, CCG, England'"
+                        }
+                    ]
+                },
+                {
+                    "column_id": "Measure_Type",
+                    "column_label": "Measure Type",
+                    "actions": [
+                        {
+                            "2020-09-02 20:47:15.264789": "Added to dataframe 'Coronavirus Shielded Patient List Summary Totals, CCG, England'"
+                        }
+                    ]
+                },
+                {
+                    "column_id": "Unit_of_measure",
+                    "column_label": "Unit of measure",
+                    "actions": [
+                        {
+                            "2020-09-02 20:47:15.264809": "Added to dataframe 'Coronavirus Shielded Patient List Summary Totals, CCG, England'"
+                        }
+                    ]
+                },
+                {
+                    "column_id": "Unit_multiplier",
+                    "column_label": "Unit multiplier",
+                    "actions": [
+                        {
+                            "2020-09-02 20:47:15.264829": "Added to dataframe 'Coronavirus Shielded Patient List Summary Totals, CCG, England'"
+                        }
+                    ]
+                },
+                {
+                    "column_id": "Value",
+                    "column_label": "Value",
+                    "actions": [
+                        {
+                            "2020-09-02 20:47:15.264884": "Added to dataframe 'Coronavirus Shielded Patient List Summary Totals, CCG, England'"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "composite_key": "Coronavirus Shielded Patient List Summary Totals, CCG, England||sub slice for breakdown field 'Gender'||https://files.digital.nhs.uk/BA/B409A2/Coronavirus%20Shielded%20Patient%20List%2C%20England%20-%20Open%20Data%20-%20CCG%20-%202020-07-01.csv",
+            "sourced_from": "https://files.digital.nhs.uk/BA/B409A2/Coronavirus%20Shielded%20Patient%20List%2C%20England%20-%20Open%20Data%20-%20CCG%20-%202020-07-01.csv",
+            "id": "https://files.digital.nhs.uk/BA/B409A2/Coronavirus%20Shielded%20Patient%20List%2C%20England%20-%20Open%20Data%20-%20CCG%20-%202020-07-01.csv : sub slice for breakdown field 'Gender'",
+            "tab": "sub slice for breakdown field 'Gender'",
+            "column_actions": [
+                {
+                    "column_id": "Period",
+                    "column_label": "Period",
+                    "actions": [
+                        {
+                            "2020-09-02 20:47:15.264907": "Added to dataframe 'Coronavirus Shielded Patient List Summary Totals, CCG, England'"
+                        }
+                    ]
+                },
+                {
+                    "column_id": "Area",
+                    "column_label": "Area",
+                    "actions": [
+                        {
+                            "2020-09-02 20:47:15.264928": "Added to dataframe 'Coronavirus Shielded Patient List Summary Totals, CCG, England'"
+                        }
+                    ]
+                },
+                {
+                    "column_id": "Age",
+                    "column_label": "Age",
+                    "actions": [
+                        {
+                            "2020-09-02 20:47:15.253388": "Pivot the Breakdown Field and Values columns to make Age and Gender dimensions"
+                        },
+                        {
+                            "2020-09-02 20:47:15.258054": "Set value to all."
+                        },
+                        {
+                            "2020-09-02 20:47:15.264948": "Added to dataframe 'Coronavirus Shielded Patient List Summary Totals, CCG, England'"
+                        }
+                    ]
+                },
+                {
+                    "column_id": "Gender",
+                    "column_label": "Gender",
+                    "actions": [
+                        {
+                            "2020-09-02 20:47:15.253455": "Pivot the Breakdown Field and Values columns to make Age and Gender dimensions"
+                        },
+                        {
+                            "2020-09-02 20:47:15.264071": "Set 'Gender' to the breakdown value."
+                        },
+                        {
+                            "2020-09-02 20:47:15.264969": "Added to dataframe 'Coronavirus Shielded Patient List Summary Totals, CCG, England'"
+                        }
+                    ]
+                },
+                {
+                    "column_id": "Measure_Type",
+                    "column_label": "Measure Type",
+                    "actions": [
+                        {
+                            "2020-09-02 20:47:15.264989": "Added to dataframe 'Coronavirus Shielded Patient List Summary Totals, CCG, England'"
+                        }
+                    ]
+                },
+                {
+                    "column_id": "Unit_of_measure",
+                    "column_label": "Unit of measure",
+                    "actions": [
+                        {
+                            "2020-09-02 20:47:15.265010": "Added to dataframe 'Coronavirus Shielded Patient List Summary Totals, CCG, England'"
+                        }
+                    ]
+                },
+                {
+                    "column_id": "Unit_multiplier",
+                    "column_label": "Unit multiplier",
+                    "actions": [
+                        {
+                            "2020-09-02 20:47:15.265031": "Added to dataframe 'Coronavirus Shielded Patient List Summary Totals, CCG, England'"
+                        }
+                    ]
+                },
+                {
+                    "column_id": "Value",
+                    "column_label": "Value",
+                    "actions": [
+                        {
+                            "2020-09-02 20:47:15.265051": "Added to dataframe 'Coronavirus Shielded Patient List Summary Totals, CCG, England'"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "composite_key": "Coronavirus Shielded Patient List Summary Totals, CCG, England||Coronavirus Shielded Patient List Summary Totals, CCG, England||https://files.digital.nhs.uk/BA/B409A2/Coronavirus%20Shielded%20Patient%20List%2C%20England%20-%20Open%20Data%20-%20CCG%20-%202020-07-01.csv : sub slice for breakdown field 'ALL'https://files.digital.nhs.uk/BA/B409A2/Coronavirus%20Shielded%20Patient%20List%2C%20England%20-%20Open%20Data%20-%20CCG%20-%202020-07-01.csv : sub slice for breakdown field 'Age'https://files.digital.nhs.uk/BA/B409A2/Coronavirus%20Shielded%20Patient%20List%2C%20England%20-%20Open%20Data%20-%20CCG%20-%202020-07-01.csv : sub slice for breakdown field 'Gender'",
+            "sourced_from": [
+                "https://files.digital.nhs.uk/BA/B409A2/Coronavirus%20Shielded%20Patient%20List%2C%20England%20-%20Open%20Data%20-%20CCG%20-%202020-07-01.csv : sub slice for breakdown field 'ALL'",
+                "https://files.digital.nhs.uk/BA/B409A2/Coronavirus%20Shielded%20Patient%20List%2C%20England%20-%20Open%20Data%20-%20CCG%20-%202020-07-01.csv : sub slice for breakdown field 'Age'",
+                "https://files.digital.nhs.uk/BA/B409A2/Coronavirus%20Shielded%20Patient%20List%2C%20England%20-%20Open%20Data%20-%20CCG%20-%202020-07-01.csv : sub slice for breakdown field 'Gender'"
+            ],
+            "id": "Coronavirus Shielded Patient List Summary Totals, CCG, England",
+            "tab": "Coronavirus Shielded Patient List Summary Totals, CCG, England",
+            "column_actions": [
+                {
+                    "column_id": "Period",
+                    "column_label": "Period",
+                    "actions": [
+                        {
+                            "2020-09-02 20:47:15.284373": "Rename LA Code, Extract Date and Patient Count to Area, Period and Value respectively"
+                        },
+                        {
+                            "2020-09-02 20:47:15.288041": "Format period as single day URI."
+                        }
+                    ]
+                },
+                {
+                    "column_id": "Area",
+                    "column_label": "Area",
+                    "actions": [
+                        {
+                            "2020-09-02 20:47:15.284295": "Rename LA Code, Extract Date and Patient Count to Area, Period and Value respectively"
+                        }
+                    ]
+                },
+                {
+                    "column_id": "Age",
+                    "column_label": "Age",
+                    "actions": []
+                },
+                {
+                    "column_id": "Gender",
+                    "column_label": "Gender",
+                    "actions": []
+                },
+                {
+                    "column_id": "Measure_Type",
+                    "column_label": "Measure Type",
+                    "actions": [
+                        {
+                            "2020-09-02 20:47:15.284538": "Set to 'Count'."
+                        }
+                    ]
+                },
+                {
+                    "column_id": "Unit_of_measure",
+                    "column_label": "Unit of measure",
+                    "actions": []
+                },
+                {
+                    "column_id": "Unit_multiplier",
+                    "column_label": "Unit multiplier",
+                    "actions": []
+                },
+                {
+                    "column_id": "Value",
+                    "column_label": "Value",
+                    "actions": [
+                        {
+                            "2020-09-02 20:47:15.284394": "Rename LA Code, Extract Date and Patient Count to Area, Period and Value respectively"
+                        }
+                    ]
+                },
+                {
+                    "column_id": "Unit",
+                    "column_label": "Unit",
+                    "actions": [
+                        {
+                            "2020-09-02 20:47:15.286303": "Set to 'People'."
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

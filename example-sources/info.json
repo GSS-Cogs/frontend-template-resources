@@ -1,0 +1,320 @@
+{
+    "title": "Coronavirus Shielded Patient List Summary Totals, England",
+    "publisher": "NHS Digital",
+    "description": "This is part of [MI] Coronavirus Shielded Patient List Summary Totals, England. Management information data published for the anonymous summary data on patients who have been identified as being on the Coronavirus Shielded Patients List. The Shielded Patients list is a very specific subset of patients judged to be at highest risk should they contract Coronavirus, identified by the Chief Medical Officer. This management information will be updated weekly by NHS Digital to inform the public and support the health and social care system with planning. The open dataset includes regional and local data to allow for analysis, modelling and planning to take place to aid the response to the Coronavirus pandemic. The dashboards provide a count of living patients that are classified as being on the Shielded Patient List by Local Authority of residence or CCG of residence broken down by age band and gender.",
+    "landingPage": "https://digital.nhs.uk/data-and-information/publications/statistical/mi-english-coronavirus-covid-19-shielded-patient-list-summary-totals/latest",
+    "datasetNotes": [
+        "On landing page scroll to bottom of page, dataset found under heading \"Resources\"."
+    ],
+    "published": "2020-05-28",
+    "families": [
+        "COVID-19"
+    ],
+    "extract": {
+        "source": "CSV, XLS",
+        "stage": "Documented"
+    },
+    "transform": {
+        "stage": [
+            "To Do",
+            "Priority"
+        ],
+        "airtable": "reclSk50OzW33GXLN",
+        "main_issue": 108,
+        "columns": {
+            "Extract Date": {
+                "description": "This is the date when the SPL summary data was extracted for use in the analysis",
+                "parent": "http://purl.org/linked-data/sdmx/2009/dimension#refPeriod",
+                "value": "http://reference.data.gov.uk/id/{+extract_date}"
+            },
+            "Disease Group": "There are 13 disease groups as defined in the SPL clinical algorithm that have been signed off by the Chief Medical Officer (CMO). A patient can be in multiple disease groups",
+            "Age": {
+                "parent": "http://purl.org/linked-data/sdmx/2009/dimension#age",
+                "value": "http://gss-data.org.uk/def/concept/age/{age}",
+                "description": "The age band of the patient based on the date of birth held within Personal Demographics Service (PDS). Age was calculated using the patients date of birth and the age is calculated as at the date of publication."
+            },
+            "Sex": {
+                "parent": "http://purl.org/linked-data/sdmx/2009/dimension#sex",
+                "value": "http://purl.org/linked-data/sdmx/2009/code#sex-{sex}",
+                "description": "Gender is as recorded within the Personal Demographics Service (PDS)"
+            },
+            "Geography Code": {
+                "parent": "http://purl.org/linked-data/sdmx/2009/dimension#refArea",
+                "value": "http://statistics.data.gov.uk/id/statistical-geography/{geography_code}",
+                "description": "The Clinical Commissioning Group (CCG) or Local Authority code containing the patients normal home address. This is derived from the patients address within the Personal Demographics Service (PDS)."
+            },
+            "Value": {
+                "unit": "http://gss-data.org.uk/def/concept/measurement-units/patients",
+                "measure": "http://gss-data.org.uk/def/measure/count",
+                "datatype": "integer"
+            }
+        },
+        "transformStage": [
+            {
+                "source_name": "Coronavirus Shielded Patient List Summary Totals, CCG, England",
+                "identifier": "Coronavirus Shielded Patient List Summary Totals, CCG, England||Thing2||https://files.digital.nhs.uk/BA/B409A2/Coronavirus%20Shielded%20Patient%20List%2C%20England%20-%20Open%20Data%20-%20CCG%20-%202020-07-01.csv",
+                "source": [
+                    {
+                        "https://files.digital.nhs.uk/BA/B409A2/Coronavirus%20Shielded%20Patient%20List%2C%20England%20-%20Open%20Data%20-%20CCG%20-%202020-07-01.csv": ""
+                    }
+                ],
+                "title": "Thing2",
+                "preview": null,
+                "observation_selection": "Select some observations.",
+                "columns": [],
+                "postTransformNotes": [
+                    {
+                        "Period": []
+                    },
+                    {
+                        "Area": []
+                    },
+                    {
+                        "Age": []
+                    },
+                    {
+                        "Gender": []
+                    }
+                ]
+            },
+            {
+                "source_name": "Coronavirus Shielded Patient List Summary Totals, CCG, England",
+                "identifier": "Coronavirus Shielded Patient List Summary Totals, CCG, England||sub slice for breakdown field 'ALL'||https://files.digital.nhs.uk/BA/B409A2/Coronavirus%20Shielded%20Patient%20List%2C%20England%20-%20Open%20Data%20-%20CCG%20-%202020-07-01.csv",
+                "source": [
+                    {
+                        "https://files.digital.nhs.uk/BA/B409A2/Coronavirus%20Shielded%20Patient%20List%2C%20England%20-%20Open%20Data%20-%20CCG%20-%202020-07-01.csv": ""
+                    }
+                ],
+                "title": "sub slice for breakdown field 'ALL'",
+                "preview": null,
+                "observation_selection": null,
+                "columns": [],
+                "postTransformNotes": [
+                    {
+                        "Period": [
+                            "Added to dataframe 'Coronavirus Shielded Patient List Summary Totals, CCG, England'"
+                        ]
+                    },
+                    {
+                        "Area": [
+                            "Added to dataframe 'Coronavirus Shielded Patient List Summary Totals, CCG, England'"
+                        ]
+                    },
+                    {
+                        "Age": [
+                            "Pivot the Breakdown Field and Values columns to make Age and Gender dimensions",
+                            "Set value to all.",
+                            "Added to dataframe 'Coronavirus Shielded Patient List Summary Totals, CCG, England'"
+                        ]
+                    },
+                    {
+                        "Gender": [
+                            "Pivot the Breakdown Field and Values columns to make Age and Gender dimensions",
+                            "Set value to all.",
+                            "Added to dataframe 'Coronavirus Shielded Patient List Summary Totals, CCG, England'"
+                        ]
+                    },
+                    {
+                        "Measure_Type": [
+                            "Added to dataframe 'Coronavirus Shielded Patient List Summary Totals, CCG, England'"
+                        ]
+                    },
+                    {
+                        "Unit_of_measure": [
+                            "Added to dataframe 'Coronavirus Shielded Patient List Summary Totals, CCG, England'"
+                        ]
+                    },
+                    {
+                        "Unit_multiplier": [
+                            "Added to dataframe 'Coronavirus Shielded Patient List Summary Totals, CCG, England'"
+                        ]
+                    },
+                    {
+                        "Value": [
+                            "Added to dataframe 'Coronavirus Shielded Patient List Summary Totals, CCG, England'"
+                        ]
+                    }
+                ]
+            },
+            {
+                "source_name": "Coronavirus Shielded Patient List Summary Totals, CCG, England",
+                "identifier": "Coronavirus Shielded Patient List Summary Totals, CCG, England||sub slice for breakdown field 'Age'||https://files.digital.nhs.uk/BA/B409A2/Coronavirus%20Shielded%20Patient%20List%2C%20England%20-%20Open%20Data%20-%20CCG%20-%202020-07-01.csv",
+                "source": [
+                    {
+                        "https://files.digital.nhs.uk/BA/B409A2/Coronavirus%20Shielded%20Patient%20List%2C%20England%20-%20Open%20Data%20-%20CCG%20-%202020-07-01.csv": ""
+                    }
+                ],
+                "title": "sub slice for breakdown field 'Age'",
+                "preview": null,
+                "observation_selection": null,
+                "columns": [],
+                "postTransformNotes": [
+                    {
+                        "Period": [
+                            "Added to dataframe 'Coronavirus Shielded Patient List Summary Totals, CCG, England'"
+                        ]
+                    },
+                    {
+                        "Area": [
+                            "Added to dataframe 'Coronavirus Shielded Patient List Summary Totals, CCG, England'"
+                        ]
+                    },
+                    {
+                        "Age": [
+                            "Pivot the Breakdown Field and Values columns to make Age and Gender dimensions",
+                            "Set 'Age' to the breakdown value.",
+                            "Added to dataframe 'Coronavirus Shielded Patient List Summary Totals, CCG, England'"
+                        ]
+                    },
+                    {
+                        "Gender": [
+                            "Pivot the Breakdown Field and Values columns to make Age and Gender dimensions",
+                            "Set value to all.",
+                            "Added to dataframe 'Coronavirus Shielded Patient List Summary Totals, CCG, England'"
+                        ]
+                    },
+                    {
+                        "Measure_Type": [
+                            "Added to dataframe 'Coronavirus Shielded Patient List Summary Totals, CCG, England'"
+                        ]
+                    },
+                    {
+                        "Unit_of_measure": [
+                            "Added to dataframe 'Coronavirus Shielded Patient List Summary Totals, CCG, England'"
+                        ]
+                    },
+                    {
+                        "Unit_multiplier": [
+                            "Added to dataframe 'Coronavirus Shielded Patient List Summary Totals, CCG, England'"
+                        ]
+                    },
+                    {
+                        "Value": [
+                            "Added to dataframe 'Coronavirus Shielded Patient List Summary Totals, CCG, England'"
+                        ]
+                    }
+                ]
+            },
+            {
+                "source_name": "Coronavirus Shielded Patient List Summary Totals, CCG, England",
+                "identifier": "Coronavirus Shielded Patient List Summary Totals, CCG, England||sub slice for breakdown field 'Gender'||https://files.digital.nhs.uk/BA/B409A2/Coronavirus%20Shielded%20Patient%20List%2C%20England%20-%20Open%20Data%20-%20CCG%20-%202020-07-01.csv",
+                "source": [
+                    {
+                        "https://files.digital.nhs.uk/BA/B409A2/Coronavirus%20Shielded%20Patient%20List%2C%20England%20-%20Open%20Data%20-%20CCG%20-%202020-07-01.csv": ""
+                    }
+                ],
+                "title": "sub slice for breakdown field 'Gender'",
+                "preview": null,
+                "observation_selection": null,
+                "columns": [],
+                "postTransformNotes": [
+                    {
+                        "Period": [
+                            "Added to dataframe 'Coronavirus Shielded Patient List Summary Totals, CCG, England'"
+                        ]
+                    },
+                    {
+                        "Area": [
+                            "Added to dataframe 'Coronavirus Shielded Patient List Summary Totals, CCG, England'"
+                        ]
+                    },
+                    {
+                        "Age": [
+                            "Pivot the Breakdown Field and Values columns to make Age and Gender dimensions",
+                            "Set value to all.",
+                            "Added to dataframe 'Coronavirus Shielded Patient List Summary Totals, CCG, England'"
+                        ]
+                    },
+                    {
+                        "Gender": [
+                            "Pivot the Breakdown Field and Values columns to make Age and Gender dimensions",
+                            "Set 'Gender' to the breakdown value.",
+                            "Added to dataframe 'Coronavirus Shielded Patient List Summary Totals, CCG, England'"
+                        ]
+                    },
+                    {
+                        "Measure_Type": [
+                            "Added to dataframe 'Coronavirus Shielded Patient List Summary Totals, CCG, England'"
+                        ]
+                    },
+                    {
+                        "Unit_of_measure": [
+                            "Added to dataframe 'Coronavirus Shielded Patient List Summary Totals, CCG, England'"
+                        ]
+                    },
+                    {
+                        "Unit_multiplier": [
+                            "Added to dataframe 'Coronavirus Shielded Patient List Summary Totals, CCG, England'"
+                        ]
+                    },
+                    {
+                        "Value": [
+                            "Added to dataframe 'Coronavirus Shielded Patient List Summary Totals, CCG, England'"
+                        ]
+                    }
+                ]
+            },
+            {
+                "source_name": "Coronavirus Shielded Patient List Summary Totals, CCG, England",
+                "identifier": "Coronavirus Shielded Patient List Summary Totals, CCG, England||Coronavirus Shielded Patient List Summary Totals, CCG, England||https://files.digital.nhs.uk/BA/B409A2/Coronavirus%20Shielded%20Patient%20List%2C%20England%20-%20Open%20Data%20-%20CCG%20-%202020-07-01.csv : sub slice for breakdown field 'ALL'https://files.digital.nhs.uk/BA/B409A2/Coronavirus%20Shielded%20Patient%20List%2C%20England%20-%20Open%20Data%20-%20CCG%20-%202020-07-01.csv : sub slice for breakdown field 'Age'https://files.digital.nhs.uk/BA/B409A2/Coronavirus%20Shielded%20Patient%20List%2C%20England%20-%20Open%20Data%20-%20CCG%20-%202020-07-01.csv : sub slice for breakdown field 'Gender'",
+                "source": [
+                    {
+                        "https://files.digital.nhs.uk/BA/B409A2/Coronavirus%20Shielded%20Patient%20List%2C%20England%20-%20Open%20Data%20-%20CCG%20-%202020-07-01.csv": "sub slice for breakdown field 'ALL'"
+                    },
+                    {
+                        "https://files.digital.nhs.uk/BA/B409A2/Coronavirus%20Shielded%20Patient%20List%2C%20England%20-%20Open%20Data%20-%20CCG%20-%202020-07-01.csv": "sub slice for breakdown field 'Age'"
+                    },
+                    {
+                        "https://files.digital.nhs.uk/BA/B409A2/Coronavirus%20Shielded%20Patient%20List%2C%20England%20-%20Open%20Data%20-%20CCG%20-%202020-07-01.csv": "sub slice for breakdown field 'Gender'"
+                    }
+                ],
+                "title": "Coronavirus Shielded Patient List Summary Totals, CCG, England",
+                "preview": null,
+                "observation_selection": null,
+                "columns": [],
+                "postTransformNotes": [
+                    {
+                        "Period": [
+                            "Rename LA Code, Extract Date and Patient Count to Area, Period and Value respectively",
+                            "Format period as single day URI."
+                        ]
+                    },
+                    {
+                        "Area": [
+                            "Rename LA Code, Extract Date and Patient Count to Area, Period and Value respectively"
+                        ]
+                    },
+                    {
+                        "Age": []
+                    },
+                    {
+                        "Gender": []
+                    },
+                    {
+                        "Measure_Type": [
+                            "Set to 'Count'."
+                        ]
+                    },
+                    {
+                        "Unit_of_measure": []
+                    },
+                    {
+                        "Unit_multiplier": []
+                    },
+                    {
+                        "Value": [
+                            "Rename LA Code, Extract Date and Patient Count to Area, Period and Value respectively"
+                        ]
+                    },
+                    {
+                        "Unit": [
+                            "Set to 'People'."
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "sizingNotes": "Should be straightforward with CSV.",
+    "notes": ""
+}
