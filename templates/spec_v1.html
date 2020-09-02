@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spec</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script>
+
+        // Hide IDs unless we want to see them
+        function ToggleIDFunction() {
+
+            var allIdDivs = document.getElementsByClassName("id-div");
+            for (var i=0, item; item = allIdDivs[i]; i++) {
+            
+                var T = allIdDivs[i],
+                    displayValue = "";
+                if (T.style.display == "")
+                    displayValue = "none";
+            
+                T.style.display = displayValue;
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <div class="page-wrap">
+        <h1>Specification</h1>
+        <div id="meta-data"></div>
+    </div>
+
+        <h2>{{ info_json.title }}</h2>
+        <table class='condform'>
+            <tbody>
+                <tr>
+                    <th>Publisher:</th>
+                    <td>{{ info_json.publisher }}</td>
+                    <th rowspan="2">Github\: <a href="https://github.com/GSS-Cogs/family-covid-19/issues/"{{ info_json.transform.main_issue }}>  <img alt="Github issue detail" src="https://img.shields.io/github/issues/detail/state/GSS-Cogs/family-covid-19/17?style=plastic"></a></th>
+                </tr>
+                
+                <tr><td></td></tr>
+                <tr>
+                    <th>Description:</th>
+                    <td>{{ info_json.description }}</td>
+                    <th rowspan="2">Jenkins: <a href="https://ci.floop.org.uk/job/GSS_data/job/COVID-19/job/ONS-Coronavirus-COVID-19-related-deaths-by-occupation-England-and-Wales-deaths-registered-up-to-and-including-20-April-2020/"> <img alt="Jenkins build status" src="https://ci.floop.org.uk/buildStatus/icon?job=GSS_data%2FCOVID-19%2FONS-Coronavirus-COVID-19-related-deaths-by-occupation-England-and-Wales-deaths-registered-up-to-and-including-20-April-2020/"> </a></th>
+                </tr>
+                <tr><td></td></tr>
+                <tr>
+                    <th>Landing Page:</th>
+                    <td><a href={{ info_json.landingPage }}>Link</a></td>
+                    <th rowspan="2">Source: <br><a>{{ info_json.extract.source }}</a></th>
+                </tr>
+                <tr><td></td></tr>
+                <tr>
+                    <th>Published:</th>
+                    <td>{{ info_json.published }}</td>
+                    <th rowspan="2">Airtable: <a>{{ info_json.transform.airtable }}</a></th>
+                </tr>
+                <tr><td></td></tr>
+                <tr>
+                    <th>Sizing Notes:</th>
+                    <td>{{ info_json.sizingNotes }}</td>
+                    <th rowspan="2">Priority: <br><a>{{ info_json.transform.stage }}</a></th>
+                </tr>
+                <tr><td></td></tr>
+                <tr>
+                    <th>Dataset Notes:</th>
+                    <td>
+                        {% for note in info_json.datasetNotes %}
+                            {{ note }}<br>
+                        {% endfor %}
+                    </td>
+                </tr>
+                <tr><td></td></tr>
+                <tr>
+                    <th><span class="font-weight-bold"> Notes: </span> </th>
+                    <td>
+                        {% for note in info_json.notes %}
+                            </tr>{{ note }}</tr>
+                        {% endfor %}
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <h2 class="override">Stage 1:</h2>
+
+            {% for this_dataframes_info in info_json.transform.transformStage %}
+            <hr>
+                <ul>
+                    <table>
+                        <tbody>
+                            <th><span class="test"> Cube Name: </span></th> <td><a>{{ this_dataframes_info.source_name }} </a></td>
+                        </tbody>
+                    </table>
+                    <table>
+                        <tbody>
+                            <th><span class="test"> Table Title: </span></th> <td><a>{{ this_dataframes_info.title }} </a></td>
+                        </tbody>
+                    </table>
+                    <table>
+                        <tbody>
+                                <button onclick="ToggleIDFunction()">Click to view full ID from tracer</button>
+                                <div class="id-div" id="display-id" style="display:none">
+                                    {{ this_dataframes_info.identifier }}
+                                </div>
+                            </span>
+                        </tbody>
+                    </table>
+                    <table>
+                        <tbody>
+                            <th><span class="test"> Source(s): </span></th><td>
+                            <ul>
+                                {% for source in this_dataframes_info.source %}
+                                    {% for k, v in source.items() %}
+                                        <li><a href={{ k }}>{{ k }}</a> {{ v }}</li><br>
+                                    {% endfor %}
+                                {% endfor %}
+                            </ul>
+                            </td>
+                        </tbody>
+                    </table>
+                    {% if this_dataframes_info.observation_selection is not none %}
+                    <table>
+                        <tbody>
+                            <th><span class="test"> Observation Selection: </span></th> <td><a>{{ this_dataframes_info.observation_selection }} </a></td>
+                        </tbody>
+                    </table>
+                    {% endif %}
+                    {% if this_dataframes_info.preview is not none %}
+                    <table>
+                        <tbody>
+                            <th><span class="test"> Databaker Preview: </span></th> <td><a>{{ this_dataframes_info.preview }} </a></td>
+                        </tbody>
+                    </table>
+                    {% endif %}
+                    <table>
+                        <tbody>
+                            <th><span class="test"> Columns: </span></th> <td></td>
+                        </tbody>
+                    </table>
+
+                    <ul>
+                        <table class="condform2">
+                        {% for column in this_dataframes_info.columns %}
+                            {% for k, v in column.items() %}
+                                <tbody>
+                                    <th class="condform2">{{ k }}</th>
+                                    <td class="condform2">{{ v }}</td>
+                                </tbody>
+                            {% endfor %}
+                        {% endfor %}
+
+                        
+                        {% for column_data in this_dataframes_info.postTransformNotes %}
+                            {% for column, entries in column_data.items() %}
+                            <table class="postNotes">
+                                <th class="postNotes">{{ column }}:</th>
+                                {% for entry in entries %}
+                                <tr></tr>
+                                <td class="postNotes">{{ entry }}</td>
+                                {% endfor %}
+                            </table>
+                            {% endfor %}
+                        {% endfor %}
+                        </table>
+                    </ul>
+                </ul>
+
+            {% endfor %}
+</body>
+</html>
