@@ -49,7 +49,7 @@ Note, by default `trace.render()` has access to the following data (any foriegn_
 * raw_data: the information captured by the tracer during runtime.
 * jenkins: a small dict of some jenkins links for displaying build information.
 
-I've included examples of both in `/example_sources`.
+I've included examples of these in `/example_sources`.
 
 
 
