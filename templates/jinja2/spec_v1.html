@@ -160,14 +160,14 @@ a {
                 <tr>
                     <th>Publisher:</th>
                     <td>{{ info_json.publisher }}</td>
-                    <th rowspan="2">Github\: <a href="https://github.com/GSS-Cogs/family-covid-19/issues/"{{ info_json.transform.main_issue }}>  <img alt="Github issue detail" src="https://img.shields.io/github/issues/detail/state/GSS-Cogs/family-covid-19/17?style=plastic"></a></th>
+                    <th rowspan="2">Github\: <a href="https://github.com/GSS-Cogs/family-covid-19/issues/{{ info_json.transform.main_issue }}">  <img alt="Github issue detail" src="https://img.shields.io/github/issues/detail/state/GSS-Cogs/family-covid-19/17?style=plastic"></a></th>
                 </tr>
                 
                 <tr><td></td></tr>
                 <tr>
                     <th>Description:</th>
                     <td>{{ info_json.description }}</td>
-                    <th rowspan="2">Jenkins: <a href="https://ci.floop.org.uk/job/GSS_data/job/COVID-19/job/ONS-Coronavirus-COVID-19-related-deaths-by-occupation-England-and-Wales-deaths-registered-up-to-and-including-20-April-2020/"> <img alt="Jenkins build status" src="https://ci.floop.org.uk/buildStatus/icon?job=GSS_data%2FCOVID-19%2FONS-Coronavirus-COVID-19-related-deaths-by-occupation-England-and-Wales-deaths-registered-up-to-and-including-20-April-2020/"> </a></th>
+                    <th rowspan="2">Jenkins: <a href="https://ci.floop.org.uk/job/GSS_data/job/{{ jenkins.job }}"><br><img alt="Jenkins build status" src="{{ jenkins.build }}"></a></th>
                 </tr>
                 <tr><td></td></tr>
                 <tr>
