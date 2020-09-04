@@ -160,7 +160,7 @@ a {
                 <tr>
                     <th>Publisher:</th>
                     <td>{{ info_json.publisher }}</td>
-                    <th rowspan="2">Github\: <a href="https://github.com/GSS-Cogs/family-covid-19/issues/{{ info_json.transform.main_issue }}">  <img alt="Github issue detail" src="https://img.shields.io/github/issues/detail/state/GSS-Cogs/family-covid-19/17?style=plastic"></a></th>
+                    <th rowspan="2">Github\: <a href="https://github.com/GSS-Cogs/family-{{ jenkins.family.lower() }}/issues/{{ info_json.transform.main_issue }}">  <img alt="Github issue detail" src="https://img.shields.io/github/issues/detail/state/GSS-Cogs/family-{{ jenkins.family.lower() }}/{{ info_json.transform.main_issue }}?style=plastic"></a></th>
                 </tr>
                 
                 <tr><td></td></tr>
